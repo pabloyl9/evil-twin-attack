@@ -19,7 +19,7 @@ El ataque consiste en forzar la desconexión de los clientes legítimos de un pu
 
 ## 2. Entorno y Herramientas.
 
-* **Máquina Atacante:** Kali Linux (VMware)
+* **Máquina Atacante:** Kali Linux
     * `airgeddon` (Framework principal de auditoría)
     * `mdk4` / `aireplay-ng` (Herramientas de desautenticación)
     * `dnsmasq` (Servidor DHCP/DNS falso)
