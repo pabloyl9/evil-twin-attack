@@ -69,28 +69,28 @@ Para demostrar el riesgo crítico de esta técnica, observamos cómo se comporta
 ### Paso 1: Infección y Redirección.
 En la máquina víctima (iPhone): Al ser desconectada de la red legítima, se conecta automáticamente a nuestro Gemelo Malvado (que está abierto). El servidor DNS del atacante intercepta las peticiones y fuerza a iOS a abrir una ventana emergente de "Wi-Fi Cautiva".
 
-<img width="425" height="566" alt="Captive Portal Pop-up" src="AQUI_PONES_EL_LINK_DE_LA_FOTO_1" />
+<img width="425" height="566" alt="Captive Portal Pop-up" src="https://github.com/user-attachments/assets/07f5bfd2-411d-45c2-87e4-09c4f76f02d3" />
 
 <br/>
 
 ### Paso 2: Simulación de envío de credenciales.
 La víctima, creyendo que es un proceso legítimo del router para restaurar su conexión a internet, introduce su contraseña real (`1234Abcd`).
 
-<img width="425" height="566" alt="Introduciendo contraseña" src="AQUI_PONES_EL_LINK_DE_LA_FOTO_2" />
+<img width="425" height="566" alt="Introduciendo contraseña" src="https://github.com/user-attachments/assets/2eb335e7-73b9-47bf-95b1-2d664257acf7" />
 
 <br/>
 
 ### Paso 3: Validación del lado de la víctima.
 Airgeddon recibe la contraseña, la compara instantáneamente con el Handshake capturado previamente y, al ser correcta, muestra un mensaje de éxito en la pantalla del usuario, cerrando el portal para no levantar sospechas.
 
-<img width="425" height="566" alt="Validación exitosa" src="AQUI_PONES_EL_LINK_DE_LA_FOTO_3" />
+<img width="425" height="566" alt="Validación exitosa" src="https://github.com/user-attachments/assets/f0784492-92bc-4ba4-9395-19e7af965181" />
 
 <br/>
 
 ### Resultado Exitoso (Atacante).
 Como se observa en la siguiente captura de la máquina atacante, el panel de control de Airgeddon detiene el ataque y revela la contraseña interceptada en texto plano (`1234Abcd`), guardándola en un archivo de texto en el sistema local:
 
-<img width="425" height="566" alt="Contraseña capturada en Kali" src="AQUI_PONES_EL_LINK_DE_LA_FOTO_4" />
+<img width="425" height="566" alt="Contraseña capturada en Kali" src="https://github.com/user-attachments/assets/ebecb799-8e96-47da-9e86-4c3586f2e2d5" />
 
 <br/>
 
