@@ -47,6 +47,7 @@ Iniciamos el framework y ponemos nuestra interfaz de red (`wlan0`) en modo monit
 ```bash
 sudo airgeddon
 ```
+<img width="856" height="438" alt="image" src="https://github.com/user-attachments/assets/e06d8c60-d4a7-4671-b91e-dd877a2d3a19" />
 
 <br/>
 
