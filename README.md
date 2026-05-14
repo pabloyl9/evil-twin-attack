@@ -13,7 +13,7 @@
 ## 1. Descripción del Proyecto.
 Este proyecto demuestra una **Prueba de Concepto (PoC)** sobre la vulnerabilidad de las redes inalámbricas (WPA2-PSK) frente a ataques de suplantación de identidad, concretamente un ataque **Evil Twin (Gemelo Malvado) con Portal Cautivo**. 
 
-<img width="928" height="575" alt="image" src="https://github.com/user-attachments/assets/ebeadbda-3c40-4b99-92a7-4c91d830e3c1" />
+<img width="928" height="575" alt="image" src="Evil Twin Attack" />
 
 El ataque consiste en forzar la desconexión de los clientes legítimos de un punto de acceso Wi-Fi y levantar un "Rogue AP" (Punto de Acceso falso) con el mismo nombre. Esto provoca que los dispositivos víctimas se conecten a nuestra red controlada, donde se les presenta un portal web fraudulento que les solicita la contraseña del router, permitiendo robar la credencial en texto plano sin necesidad de recurrir a ataques de fuerza bruta.
 
@@ -30,7 +30,7 @@ El ataque consiste en forzar la desconexión de los clientes legítimos de un pu
 * **Máquina Víctima:** Apple iPhone (iOS)
 * **Red Objetivo:** `S25 de Pabloo` (Cifrado WPA2-PSK)
 
-<img width="1913" height="630" alt="image" src="https://github.com/user-attachments/assets/52734c81-5e20-4a4c-ba70-6779b0e3fd80" />
+<img width="1913" height="630" alt="Entorno y Herramientas" src="https://github.com/user-attachments/assets/52734c81-5e20-4a4c-ba70-6779b0e3fd80" />
 
 <br/>
 
@@ -45,7 +45,7 @@ Primero, instalamos los controladores necesarios para que Kali Linux reconozca e
 ```bash
 sudo apt update && sudo apt install realtek-rtl88xxau-dkms dnsmasq lighttpd php-cgi mdk4 -y
 ```
-<img width="1140" height="482" alt="image" src="https://github.com/user-attachments/assets/d2012e10-ccbf-40b9-bb1f-e6fa3b1ec8ae" />
+<img width="1140" height="482" alt="Dependencias" src="https://github.com/user-attachments/assets/d2012e10-ccbf-40b9-bb1f-e6fa3b1ec8ae" />
 
 <br/>
 
@@ -54,23 +54,23 @@ Iniciamos el framework y ponemos nuestra interfaz de red (`wlan0`) en modo monit
 ```bash
 sudo airgeddon
 ```
-<img width="856" height="438" alt="image" src="https://github.com/user-attachments/assets/e06d8c60-d4a7-4671-b91e-dd877a2d3a19" />
+<img width="856" height="438" alt="Airgeddon" src="https://github.com/user-attachments/assets/e06d8c60-d4a7-4671-b91e-dd877a2d3a19" />
 
 <br/>
 
 ### Paso 2: Reconocimiento y Captura del Handshake.
 Para que el portal cautivo pueda verificar matemáticamente que la contraseña introducida por la víctima es correcta, necesitamos capturar primero un saludo de conexión cifrado (WPA Handshake).
-<img width="638" height="398" alt="wireless-cracking-using-kali-13-638" src="https://github.com/user-attachments/assets/6dabf8f6-534a-4c88-892f-43b67f574da6" />
+<img width="638" height="398" alt="4 Way WPA Handshake" src="https://github.com/user-attachments/assets/6dabf8f6-534a-4c88-892f-43b67f574da6" />
 
 #### 1. Exploración y Desautenticación:
 Entramos en el menú de ataques *Evil Twin* (Opción 7), exploramos las redes cercanas (Opción 4) y fijamos nuestro objetivo (`S25 de Pabloo`). Lanzamos un ataque de desautenticación mediante `aireplay-ng` para forzar a un dispositivo a reconectarse y capturar el Handshake.
-<img width="1166" height="662" alt="image" src="https://github.com/user-attachments/assets/ecb9d619-42f4-43cc-ab01-a7ee0eb1096d" />
+<img width="1166" height="662" alt="Desautenticación" src="https://github.com/user-attachments/assets/ecb9d619-42f4-43cc-ab01-a7ee0eb1096d" />
 
 <br/>
 
 #### 2. Configuración del Portal Cautivo:
 Una vez obtenido el Handshake, seleccionamos el ataque de Portal Cautivo (Opción 9), le indicamos el archivo capturado y configuramos el idioma de la página web falsa (Español). Airgeddon levanta automáticamente 6 terminales encargadas del enrutamiento, DNS, servidor web y el AP falso.
-<img width="1167" height="662" alt="image" src="https://github.com/user-attachments/assets/6df18e75-c3a9-4dbd-917a-3c9c5f51cd55" />
+<img width="1167" height="662" alt="Configuración Portal Cautivo" src="https://github.com/user-attachments/assets/6df18e75-c3a9-4dbd-917a-3c9c5f51cd55" />
 
 <br/>
 
@@ -124,7 +124,7 @@ Instruir a los usuarios para que desconfíen de redes Wi-Fi conocidas que de rep
 ### 4. Sistemas WIDS/WIPS: 
 Utilizar sistemas de detección y prevención de intrusiones inalámbricas para monitorizar la aparición de puntos de acceso con MACs duplicadas (BSSID Spoofing) o nombres idénticos (ESSID Spoofing) en el entorno corporativo.
 
-<img width="1883" height="636" alt="image" src="https://github.com/user-attachments/assets/6e0d083e-6d6e-4217-bb9a-0c2ac7b471df" />
+<img width="1883" height="636" alt="Mitigación y solulciones" src="https://github.com/user-attachments/assets/6e0d083e-6d6e-4217-bb9a-0c2ac7b471df" />
 
 <br/>
 
