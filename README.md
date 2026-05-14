@@ -13,7 +13,7 @@
 ## 1. Descripción del Proyecto.
 Este proyecto demuestra una **Prueba de Concepto (PoC)** sobre la vulnerabilidad de las redes inalámbricas (WPA2-PSK) frente a ataques de suplantación de identidad, concretamente un ataque **Evil Twin (Gemelo Malvado) con Portal Cautivo**. 
 
-<img width="928" height="575" alt="image" src="Evil Twin Attack" />
+<img width="928" height="575" alt="Evil Twin Attack" src="https://github.com/user-attachments/assets/ebeadbda-3c40-4b99-92a7-4c91d830e3c1" />
 
 El ataque consiste en forzar la desconexión de los clientes legítimos de un punto de acceso Wi-Fi y levantar un "Rogue AP" (Punto de Acceso falso) con el mismo nombre. Esto provoca que los dispositivos víctimas se conecten a nuestra red controlada, donde se les presenta un portal web fraudulento que les solicita la contraseña del router, permitiendo robar la credencial en texto plano sin necesidad de recurrir a ataques de fuerza bruta.
 
