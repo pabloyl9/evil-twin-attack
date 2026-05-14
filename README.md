@@ -62,8 +62,6 @@ sudo airgeddon
 Para que el portal cautivo pueda verificar matemáticamente que la contraseña introducida por la víctima es correcta, necesitamos capturar primero un saludo de conexión cifrado (WPA Handshake).
 <img width="638" height="398" alt="wireless-cracking-using-kali-13-638" src="https://github.com/user-attachments/assets/6dabf8f6-534a-4c88-892f-43b67f574da6" />
 
-<br/>
-
 #### 1. Exploración y Desautenticación:
 Entramos en el menú de ataques *Evil Twin* (Opción 7), exploramos las redes cercanas (Opción 4) y fijamos nuestro objetivo (`S25 de Pabloo`). Lanzamos un ataque de desautenticación mediante `aireplay-ng` para forzar a un dispositivo a reconectarse y capturar el Handshake.
 <img width="1166" height="662" alt="image" src="https://github.com/user-attachments/assets/ecb9d619-42f4-43cc-ab01-a7ee0eb1096d" />
@@ -125,6 +123,8 @@ Instruir a los usuarios para que desconfíen de redes Wi-Fi conocidas que de rep
 
 ### 4. Sistemas WIDS/WIPS: 
 Utilizar sistemas de detección y prevención de intrusiones inalámbricas para monitorizar la aparición de puntos de acceso con MACs duplicadas (BSSID Spoofing) o nombres idénticos (ESSID Spoofing) en el entorno corporativo.
+
+<img width="1883" height="636" alt="image" src="https://github.com/user-attachments/assets/6e0d083e-6d6e-4217-bb9a-0c2ac7b471df" />
 
 <br/>
 
