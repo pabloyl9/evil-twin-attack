@@ -30,6 +30,8 @@ El ataque consiste en forzar la desconexión de los clientes legítimos de un pu
 * **Máquina Víctima:** Apple iPhone (iOS)
 * **Red Objetivo:** `S25 de Pabloo` (Cifrado WPA2-PSK)
 
+<img width="1913" height="630" alt="image" src="https://github.com/user-attachments/assets/52734c81-5e20-4a4c-ba70-6779b0e3fd80" />
+
 <br/>
 
 ---
