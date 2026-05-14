@@ -93,15 +93,13 @@ En la máquina víctima (iPhone): Al ser desconectada de la red legítima, se co
 La víctima, creyendo que es un proceso legítimo del router para restaurar su conexión a internet, introduce su contraseña real (`1234Abcd`).
 
 <img width="425" height="566" alt="Introduciendo contraseña" src="https://github.com/user-attachments/assets/2eb335e7-73b9-47bf-95b1-2d664257acf7" />
-
-<br/>
+<br/><br/>
 
 ### Paso 3: Validación del lado de la víctima.
 Airgeddon recibe la contraseña, la compara instantáneamente con el Handshake capturado previamente y, al ser correcta, muestra un mensaje de éxito en la pantalla del usuario, cerrando el portal para no levantar sospechas.
 
 <img width="425" height="566" alt="Validación exitosa" src="https://github.com/user-attachments/assets/f0784492-92bc-4ba4-9395-19e7af965181" />
-
-<br/>
+<br/><br/>
 
 ### Resultado Exitoso (Atacante).
 Como se observa en la siguiente captura de la máquina atacante, el panel de control de Airgeddon detiene el ataque y revela la contraseña interceptada en texto plano (`1234Abcd`), guardándola en un archivo de texto en el sistema local:
