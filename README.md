@@ -49,6 +49,7 @@ sudo apt update && sudo apt install realtek-rtl88xxau-dkms dnsmasq lighttpd php-
 ```
 <img width="1140" height="482" alt="Dependencias" src="https://github.com/user-attachments/assets/d2012e10-ccbf-40b9-bb1f-e6fa3b1ec8ae" />
 <br/><br/>
+
 #### 2. Ejecución de Airgeddon y Modo Monitor:
 Iniciamos el framework y ponemos nuestra interfaz de red (`wlan0`) en modo monitor para poder inyectar paquetes.
 ```bash
