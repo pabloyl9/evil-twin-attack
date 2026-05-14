@@ -48,19 +48,14 @@ Primero, instalamos los controladores necesarios para que Kali Linux reconozca e
 sudo apt update && sudo apt install realtek-rtl88xxau-dkms dnsmasq lighttpd php-cgi mdk4 -y
 ```
 <img width="1140" height="482" alt="Dependencias" src="https://github.com/user-attachments/assets/d2012e10-ccbf-40b9-bb1f-e6fa3b1ec8ae" />
-
-<br/>
-
-
+<br/><br/>
 #### 2. Ejecución de Airgeddon y Modo Monitor:
 Iniciamos el framework y ponemos nuestra interfaz de red (`wlan0`) en modo monitor para poder inyectar paquetes.
 ```bash
 sudo airgeddon
 ```
 <img width="856" height="438" alt="Airgeddon" src="https://github.com/user-attachments/assets/e06d8c60-d4a7-4671-b91e-dd877a2d3a19" />
-
-<br/>
-
+<br/><br/>
 
 ### Paso 2: Reconocimiento y Captura del Handshake.
 Para que el portal cautivo pueda verificar matemáticamente que la contraseña introducida por la víctima es correcta, necesitamos capturar primero un saludo de conexión cifrado (WPA Handshake).
