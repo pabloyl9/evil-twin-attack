@@ -17,7 +17,7 @@ Este proyecto demuestra una **Prueba de Concepto (PoC)** sobre la vulnerabilidad
 <br><br>
 El ataque consiste en forzar la desconexión de los clientes legítimos de un punto de acceso Wi-Fi y levantar un "Rogue AP" (Punto de Acceso falso) con el mismo nombre. Esto provoca que los dispositivos víctimas se conecten a nuestra red controlada, donde se les presenta un portal web fraudulento que les solicita la contraseña del router, permitiendo robar la credencial en texto plano sin necesidad de recurrir a ataques de fuerza bruta.
 
-<br/>
+<br/><br>
 
 ## 2. Entorno y Herramientas.
 
