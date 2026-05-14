@@ -42,6 +42,7 @@ El ataque consiste en forzar la desconexión de los clientes legítimos de un pu
 
 ### Paso 1: Preparación del Atacante.
 Primero, instalamos los controladores necesarios para que Kali Linux reconozca el chipset de nuestra tarjeta de red y las dependencias opcionales que requiere el portal cautivo de Airgeddon.
+<br/>
 
 #### 1. Instalación de dependencias y drivers:
 ```bash
@@ -56,17 +57,17 @@ Iniciamos el framework y ponemos nuestra interfaz de red (`wlan0`) en modo monit
 sudo airgeddon
 ```
 <img width="856" height="438" alt="Airgeddon" src="https://github.com/user-attachments/assets/e06d8c60-d4a7-4671-b91e-dd877a2d3a19" />
-<br/><br/>
+<br/><br/><br/>
 
 ### Paso 2: Reconocimiento y Captura del Handshake.
 Para que el portal cautivo pueda verificar matemáticamente que la contraseña introducida por la víctima es correcta, necesitamos capturar primero un saludo de conexión cifrado (WPA Handshake).
 <img width="638" height="398" alt="4 Way WPA Handshake" src="https://github.com/user-attachments/assets/6dabf8f6-534a-4c88-892f-43b67f574da6" />
+<br/><br/>
 
 #### 1. Exploración y Desautenticación:
 Entramos en el menú de ataques *Evil Twin* (Opción 7), exploramos las redes cercanas (Opción 4) y fijamos nuestro objetivo (`S25 de Pabloo`). Lanzamos un ataque de desautenticación mediante `aireplay-ng` para forzar a un dispositivo a reconectarse y capturar el Handshake.
 <img width="1166" height="662" alt="Desautenticación" src="https://github.com/user-attachments/assets/ecb9d619-42f4-43cc-ab01-a7ee0eb1096d" />
-
-<br/>
+<br/><br/>
 
 #### 2. Configuración del Portal Cautivo:
 Una vez obtenido el Handshake, seleccionamos el ataque de Portal Cautivo (Opción 9), le indicamos el archivo capturado y configuramos el idioma de la página web falsa (Español). Airgeddon levanta automáticamente 6 terminales encargadas del enrutamiento, DNS, servidor web y el AP falso.
