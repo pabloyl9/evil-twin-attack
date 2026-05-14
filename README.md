@@ -51,6 +51,7 @@ sudo apt update && sudo apt install realtek-rtl88xxau-dkms dnsmasq lighttpd php-
 
 <br/>
 
+
 #### 2. Ejecución de Airgeddon y Modo Monitor:
 Iniciamos el framework y ponemos nuestra interfaz de red (`wlan0`) en modo monitor para poder inyectar paquetes.
 ```bash
@@ -59,6 +60,7 @@ sudo airgeddon
 <img width="856" height="438" alt="Airgeddon" src="https://github.com/user-attachments/assets/e06d8c60-d4a7-4671-b91e-dd877a2d3a19" />
 
 <br/>
+
 
 ### Paso 2: Reconocimiento y Captura del Handshake.
 Para que el portal cautivo pueda verificar matemáticamente que la contraseña introducida por la víctima es correcta, necesitamos capturar primero un saludo de conexión cifrado (WPA Handshake).
