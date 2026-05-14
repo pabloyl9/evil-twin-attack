@@ -62,15 +62,17 @@ sudo airgeddon
 ### Paso 2: Reconocimiento y Captura del Handshake.
 Para que el portal cautivo pueda verificar matemáticamente que la contraseña introducida por la víctima es correcta, necesitamos capturar primero un saludo de conexión cifrado (WPA Handshake).
 <img width="638" height="398" alt="4 Way WPA Handshake" src="https://github.com/user-attachments/assets/6dabf8f6-534a-4c88-892f-43b67f574da6" />
-<br/><br/>
+<br/>
 
 #### 1. Exploración y Desautenticación:
 Entramos en el menú de ataques *Evil Twin* (Opción 7), exploramos las redes cercanas (Opción 4) y fijamos nuestro objetivo (`S25 de Pabloo`). Lanzamos un ataque de desautenticación mediante `aireplay-ng` para forzar a un dispositivo a reconectarse y capturar el Handshake.
+
 <img width="1166" height="662" alt="Desautenticación" src="https://github.com/user-attachments/assets/ecb9d619-42f4-43cc-ab01-a7ee0eb1096d" />
 <br/><br/>
 
 #### 2. Configuración del Portal Cautivo:
 Una vez obtenido el Handshake, seleccionamos el ataque de Portal Cautivo (Opción 9), le indicamos el archivo capturado y configuramos el idioma de la página web falsa (Español). Airgeddon levanta automáticamente 6 terminales encargadas del enrutamiento, DNS, servidor web y el AP falso.
+
 <img width="1167" height="662" alt="Configuración Portal Cautivo" src="https://github.com/user-attachments/assets/6df18e75-c3a9-4dbd-917a-3c9c5f51cd55" />
 
 <br/>
