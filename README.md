@@ -7,8 +7,8 @@
 **Fecha:** Mayo 2026
 
 **Vídeo:** "https://gvaedu-my.sharepoint.com/:v:/g/personal/pabarelop_alu_edu_gva_es/IQDNyugcpO4IQ6vl9n47nYuyATHEbXE6V_IqF6-N-uP5svY"
-
 <br/>
+
 ---
 
 ## 1. Descripción del Proyecto.
