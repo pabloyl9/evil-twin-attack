@@ -17,7 +17,7 @@ Este proyecto demuestra una **Prueba de Concepto (PoC)** sobre la vulnerabilidad
 <br><br>
 El ataque consiste en forzar la desconexión de los clientes legítimos de un punto de acceso Wi-Fi y levantar un "Rogue AP" (Punto de Acceso falso) con el mismo nombre. Esto provoca que los dispositivos víctimas se conecten a nuestra red controlada, donde se les presenta un portal web fraudulento que les solicita la contraseña del router, permitiendo robar la credencial en texto plano sin necesidad de recurrir a ataques de fuerza bruta.
 
-<br/>
+<br/><br/>
 
 ---
 
@@ -34,7 +34,7 @@ El ataque consiste en forzar la desconexión de los clientes legítimos de un pu
 
 <img width="1913" height="630" alt="Entorno y Herramientas" src="https://github.com/user-attachments/assets/52734c81-5e20-4a4c-ba70-6779b0e3fd80" />
 
-<br/>
+<br/><br/>
 
 ---
 
@@ -75,7 +75,7 @@ Una vez obtenido el Handshake, seleccionamos el ataque de Portal Cautivo (Opció
 
 <img width="1167" height="662" alt="Configuración Portal Cautivo" src="https://github.com/user-attachments/assets/6df18e75-c3a9-4dbd-917a-3c9c5f51cd55" />
 
-<br/>
+<br/><br/>
 
 ---
 
@@ -86,8 +86,7 @@ Para demostrar el riesgo crítico de esta técnica, observamos cómo se comporta
 En la máquina víctima (iPhone): Al ser desconectada de la red legítima, se conecta automáticamente a nuestro Gemelo Malvado (que está abierto). El servidor DNS del atacante intercepta las peticiones y fuerza a iOS a abrir una ventana emergente de "Wi-Fi Cautiva".
 
 <img width="425" height="566" alt="Captive Portal Pop-up" src="https://github.com/user-attachments/assets/07f5bfd2-411d-45c2-87e4-09c4f76f02d3" />
-
-<br/>
+<br/><br/>
 
 ### Paso 2: Simulación de envío de credenciales.
 La víctima, creyendo que es un proceso legítimo del router para restaurar su conexión a internet, introduce su contraseña real (`1234Abcd`).
@@ -106,7 +105,7 @@ Como se observa en la siguiente captura de la máquina atacante, el panel de con
 
 <img width="425" height="566" alt="Contraseña capturada en Kali" src="https://github.com/user-attachments/assets/ebecb799-8e96-47da-9e86-4c3586f2e2d5" />
 
-<br/>
+<br/><br/>
 
 ---
 
@@ -127,7 +126,7 @@ Utilizar sistemas de detección y prevención de intrusiones inalámbricas para 
 
 <img width="1883" height="636" alt="Mitigación y solulciones" src="https://github.com/user-attachments/assets/6e0d083e-6d6e-4217-bb9a-0c2ac7b471df" />
 
-<br/>
+<br/><br/>
 
 ---
 Este proyecto ha sido realizado con fines educativos en un entorno controlado.
